@@ -10,7 +10,7 @@ function App() {
     <div className="p-8 space-y-8">
       <h1 className="text-3xl font-bold">React Components Demo</h1>
 
-      <section>
+      {/*  <section>
         <h2 className="text-2xl font-semibold mb-4">Buttons</h2>
         <div className="space-x-4">
           <Button size="lg" color="green">
@@ -20,6 +20,25 @@ function App() {
             Disabled Small Button
           </Button>
           <Button size="md" color="red">
+            Medium Button
+          </Button>
+          <Button size="md" color="red">
+            Medium Button
+          </Button>
+        </div>
+      </section> */}
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Buttons</h2>
+        <div className="space-x-4">
+          <Button size="lg" color="green" label="Large Button" />
+          <Button
+            size="sm"
+            color="red"
+            label="Disabled Small Button"
+            disabled
+          />{" "}
+          <Button size="md" color="red" label="Medium Button">
             Medium Button
           </Button>
         </div>
