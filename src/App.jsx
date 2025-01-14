@@ -2,6 +2,7 @@ import Button from "./components/Button";
 import Alert from "./components/Alert";
 import Badge from "./components/Badge";
 import Card from "./components/Card";
+
 import { FaStar, FaBell } from "react-icons/fa";
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
           <Button size="sm" color="red" disabled>
             Disabled Small Button
           </Button>
+          <Button size="md" color="red">
+            Medium Button
+          </Button>
         </div>
       </section>
 
@@ -29,6 +33,7 @@ function App() {
         <Alert color="green" icon="success">
           Operation successful!
         </Alert>
+        <Alert icon="info">This is an info alert.</Alert>
       </section>
 
       <section>
@@ -46,12 +51,12 @@ function App() {
       <section>
         <h2 className="text-2xl font-semibold mb-4">Card</h2>
         <Card
-          href="https://example.com"
+          href="https://github.com/NoelPerland"
           imgAlt="Example Image"
-          imgSrc="https://via.placeholder.com/300"
+          imgSrc="ProfilePic"
         >
-          <h3 className="text-lg font-bold">Card Title</h3>
-          <p>This is a description inside the card.</p>
+          <h3 className="text-lg font-bold">Noel Perland</h3>
+          <p>Frontend Developer</p>
         </Card>
       </section>
     </div>

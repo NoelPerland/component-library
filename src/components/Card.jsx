@@ -1,12 +1,25 @@
+import nolle from "../assets/nolle.jpg";
+
 const Card = ({ href, imgAlt, imgSrc, children }) => {
   return (
-    <a
-      href={href}
-      className="block max-w-sm border rounded shadow-md overflow-hidden hover:shadow-lg"
-    >
-      <img src={imgSrc} alt={imgAlt} className="w-full h-auto" />
-      <div className="p-4">{children}</div>
-    </a>
+    <div className="border rounded shadow-md overflow-hidden">
+      <img
+        src={nolle}
+        alt="Profile picture"
+        style={{ width: "250px", height: "250px" }}
+      ></img>
+      <div className="p-4">
+        {children}
+        {href && (
+          <a
+            href={href}
+            className="text-blue-500 hover:underline mt-2 inline-block"
+          >
+            Learn more
+          </a>
+        )}
+      </div>
+    </div>
   );
 };
 
